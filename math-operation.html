@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            body {
+                width:40%;
+                text-align: left;
+                margin:100px auto;
+                background-color: rgb(127, 214, 214);
+
+            }
+            
+        </style>
+    </head>
+    <body>
+            <input id="first" type="text">
+            <select name="" id="select">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+                <option value="**">**</option>
+            </select>
+            <input id="second" type="text">
+            <span>=</span>
+            <input id="result" type="text">
+
+        <script>
+          var firstInput = parseInt(document.getElementById("first").value);
+          var secondInput = parseInt(document.getElementById("second").value);
+          var operator = document.getElementById("select");
+          operator.addEventListener("click", doThis);
+          function doThis(math) {
+             if  (math.target.value == "+") {
+                result.value = firstInput + secondInput;}
+                
+             else if (math.target.value== "-") {
+             result.value = firstInput - secondInput;}
+
+             else if (math.target.value== "*") {
+             result.value = firstInput * secondInput;}
+
+             else if (math.target.value== "/") {
+             result.value = firstInput - secondInput;}
+
+             else if (math.target.value== "%") {
+             result.value = firstInput - secondInput;}
+
+             else if (math.target.value== "**"){
+             result.value = firstInput ** secondInput;}
+          } 
+        
+             
+            
+        
+      
+          
+
+          
+        </script>
+    </body>
+</html>
